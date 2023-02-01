@@ -26,7 +26,7 @@ const Navbar = () => {
     const primaryLight = theme.palette.primary.light;
     const alt = theme.palette.background.alt;
 
-    const fullName = `${user.firstName} ${user.lastName}`;
+    const fullName =  "fake person";//`${user.firstName} ${user.lastName}`; // ?????
 
 
     return(
@@ -44,7 +44,7 @@ const Navbar = () => {
                     },
                 }}
                 >
-                    Huby ✈️
+                    Mange Mon Cul Jeremy ✈️
                 </Typography>
                 {isNonMobileScreens && (
                     <FlexBetween backgroundColor={neutralLight} borderRadius="9px" gap="3rem"
