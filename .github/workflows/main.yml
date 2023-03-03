@@ -1,4 +1,4 @@
-name: Test et déploiement sur la branche principale
+name: Déploiement sur la branche principale
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - develop
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
     
     steps:
