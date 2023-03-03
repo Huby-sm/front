@@ -1,0 +1,20 @@
+name: Test et déploiement sur la branche principale
+
+on:
+  push:
+    branches:
+      - develop
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout du code
+      uses: actions/checkout@v2
+      
+    - name: Installer les dépendances
+      run: npm install
+      
+    - name: Build
+      run: npm run build
